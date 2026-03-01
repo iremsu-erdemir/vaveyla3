@@ -1,0 +1,16 @@
+namespace Vaveyla.Api.Models;
+
+public sealed class Restaurant
+{
+    public Guid RestaurantId { get; set; }
+    public Guid OwnerUserId { get; set; }
+    public string Name { get; set; } = string.Empty;
+    public string Type { get; set; } = string.Empty;
+    public string Address { get; set; } = string.Empty;
+    public string Phone { get; set; } = string.Empty;
+    public string WorkingHours { get; set; } = string.Empty;
+    public bool OrderNotifications { get; set; } = true;
+    public bool IsOpen { get; set; } = true;
+    public string? PhotoPath { get; set; }
+    public DateTime CreatedAtUtc { get; set; }
+}
